@@ -1,0 +1,24 @@
+#include<stdio.h>
+
+int main()
+{
+    int Arr[] = {11,21,51,101,111};
+
+    int *p = NULL;
+    int *q = NULL;
+
+    p = &(Arr[1]);
+    q = &(Arr[3]);
+
+    printf("%d\n",*p);          //21
+    printf("%d\n",*q);          //101
+
+    q = q - 3;
+
+    printf("%d\n",*q);          //11
+
+    p = p + 2;
+    printf("%d\n",*p);          //101
+
+    return 0;
+}
